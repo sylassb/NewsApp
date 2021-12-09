@@ -1,4 +1,4 @@
-package com.sylas.newsapp.ui
+package com.sylas.newsapp.ui.activity
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,12 +7,12 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.sylas.newsapp.adapter.MainAdapter
+import com.sylas.newsapp.data.local.model.Article
 import com.sylas.newsapp.databinding.ActivitySearchBinding
-import com.sylas.newsapp.model.Article
-import com.sylas.newsapp.model.data.NewsDataSource
 import com.sylas.newsapp.presenter.ViewHome
 import com.sylas.newsapp.presenter.search.SearchPresenter
+import com.sylas.newsapp.repository.NewsDataSource
+import com.sylas.newsapp.ui.adapter.MainAdapter
 import com.sylas.newsapp.util.UtilQueryTextListener
 
 

@@ -1,7 +1,7 @@
 package com.sylas.newsapp.presenter.news
 
-import com.sylas.newsapp.model.NewsResponse
-import com.sylas.newsapp.model.data.NewsDataSource
+import com.sylas.newsapp.data.local.model.NewsResponse
+import com.sylas.newsapp.repository.NewsDataSource
 import com.sylas.newsapp.presenter.ViewHome
 
 class NewsPresenter(val view: ViewHome.View,

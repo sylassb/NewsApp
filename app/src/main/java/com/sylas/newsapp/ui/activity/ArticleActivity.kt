@@ -1,15 +1,15 @@
-package com.sylas.newsapp.ui
+package com.sylas.newsapp.ui.activity
 
 import android.os.Bundle
 import android.webkit.WebViewClient
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.snackbar.Snackbar
 import com.sylas.newsapp.R
+import com.sylas.newsapp.data.local.model.Article
 import com.sylas.newsapp.databinding.ActivityArticleBinding
-import com.sylas.newsapp.model.Article
-import com.sylas.newsapp.model.data.NewsDataSource
 import com.sylas.newsapp.presenter.ViewHome
 import com.sylas.newsapp.presenter.favorite.FavoritePresenter
+import com.sylas.newsapp.repository.NewsDataSource
 
 
 class ArticleActivity : AppCompatActivity(), ViewHome.Favorite {

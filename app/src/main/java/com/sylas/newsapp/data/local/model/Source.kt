@@ -1,4 +1,4 @@
-package com.sylas.newsapp.model
+package com.sylas.newsapp.data.local.model
 
 import java.io.Serializable
 

@@ -1,6 +1,6 @@
-package com.sylas.newsapp.network
+package com.sylas.newsapp.data.remote
 
-import com.sylas.newsapp.model.NewsResponse
+import com.sylas.newsapp.data.local.model.NewsResponse
 import com.sylas.newsapp.util.Constants.Companion.API_KEY
 import retrofit2.Response
 import retrofit2.http.GET

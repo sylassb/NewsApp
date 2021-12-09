@@ -1,4 +1,4 @@
-package com.sylas.newsapp.model
+package com.sylas.newsapp.data.local.model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

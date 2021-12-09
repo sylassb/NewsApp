@@ -1,9 +1,9 @@
-package com.sylas.newsapp.model.data
+package com.sylas.newsapp.repository
 
 import android.content.Context
-import com.sylas.newsapp.model.Article
-import com.sylas.newsapp.model.db.ArticleDataBase
-import com.sylas.newsapp.network.RetrofitInstance
+import com.sylas.newsapp.data.local.db.ArticleDataBase
+import com.sylas.newsapp.data.local.model.Article
+import com.sylas.newsapp.data.remote.RetrofitInstance
 import com.sylas.newsapp.presenter.favorite.FavoriteHome
 import com.sylas.newsapp.presenter.news.NewsHome
 import com.sylas.newsapp.presenter.search.SearchHome
@@ -12,7 +12,7 @@ import kotlinx.coroutines.*
 class NewsDataSource(context: Context) {
 
     private var db: ArticleDataBase = ArticleDataBase(context)
-    private var newsRepository: NewsRepository = NewsRepository(db)
+    private var newsRepository: NewsRepository = NewsRepository(RetrofitInstance.api, db)
 
     fun getBreakingNews(callback: NewsHome.Presenter) {
         GlobalScope.launch(Dispatchers.Main) {
@@ -53,7 +53,7 @@ class NewsDataSource(context: Context) {
     fun getAllArticle(callback: FavoriteHome.Presenter) {
         var allArticles: List<Article>
         CoroutineScope(Dispatchers.IO).launch {
-            allArticles = newsRepository.getAll()
+            allArticles = newsRepository.getAll().value!!
 
             withContext(Dispatchers.Main) {
                 callback.onSuccess(allArticles)

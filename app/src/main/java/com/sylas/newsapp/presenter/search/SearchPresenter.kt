@@ -1,11 +1,12 @@
 package com.sylas.newsapp.presenter.search
 
-import com.sylas.newsapp.model.NewsResponse
-import com.sylas.newsapp.model.data.NewsDataSource
+import com.sylas.newsapp.data.local.model.NewsResponse
+import com.sylas.newsapp.repository.NewsDataSource
 import com.sylas.newsapp.presenter.ViewHome
 
 class SearchPresenter(val view: ViewHome.View,
-private val dataSource: NewsDataSource): SearchHome.Presenter {
+private val dataSource: NewsDataSource
+): SearchHome.Presenter {
 
     override fun search(term: String) {
         this.view.showProgressBar()

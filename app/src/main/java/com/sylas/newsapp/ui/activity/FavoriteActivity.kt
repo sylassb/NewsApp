@@ -1,4 +1,4 @@
-package com.sylas.newsapp.ui
+package com.sylas.newsapp.ui.activity
 
 import android.content.Intent
 import android.os.Bundle
@@ -9,12 +9,12 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.snackbar.Snackbar
 import com.sylas.newsapp.R
-import com.sylas.newsapp.adapter.MainAdapter
+import com.sylas.newsapp.data.local.model.Article
 import com.sylas.newsapp.databinding.ActivityFavoriteBinding
-import com.sylas.newsapp.model.Article
-import com.sylas.newsapp.model.data.NewsDataSource
 import com.sylas.newsapp.presenter.ViewHome
 import com.sylas.newsapp.presenter.favorite.FavoritePresenter
+import com.sylas.newsapp.repository.NewsDataSource
+import com.sylas.newsapp.ui.adapter.MainAdapter
 
 
 class FavoriteActivity : AppCompatActivity(), ViewHome.Favorite {

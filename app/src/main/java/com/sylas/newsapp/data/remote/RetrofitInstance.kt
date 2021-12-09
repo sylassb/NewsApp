@@ -1,4 +1,4 @@
-package com.sylas.newsapp.network
+package com.sylas.newsapp.data.remote
 
 import com.sylas.newsapp.util.Constants.Companion.BASE_URL
 import okhttp3.OkHttpClient

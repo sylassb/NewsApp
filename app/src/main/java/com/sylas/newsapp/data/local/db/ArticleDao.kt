@@ -1,7 +1,8 @@
-package com.sylas.newsapp.model.db
+package com.sylas.newsapp.data.local.db
 
+import androidx.lifecycle.LiveData
 import androidx.room.*
-import com.sylas.newsapp.model.Article
+import com.sylas.newsapp.data.local.model.Article
 
 @Dao
 interface ArticleDao {
@@ -10,7 +11,7 @@ interface ArticleDao {
     suspend fun  updateInsert(article: Article) : Long
 
     @Query("SELECT * FROM articles")
-    fun getAll(): List<Article>
+    fun getAll(): LiveData<List<Article>>
 
     @Delete
     suspend fun delete(article: Article)

@@ -1,4 +1,4 @@
-package com.sylas.newsapp.adapter
+package com.sylas.newsapp.ui.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.sylas.newsapp.databinding.ItemNewsBinding
-import com.sylas.newsapp.model.Article
+import com.sylas.newsapp.data.local.model.Article
 
 
 class MainAdapter: RecyclerView.Adapter<MainAdapter.ArticleViewHolder>() {
