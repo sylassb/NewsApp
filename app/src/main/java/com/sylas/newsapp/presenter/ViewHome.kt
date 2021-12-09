@@ -1,6 +1,6 @@
 package com.sylas.newsapp.presenter
 
-import com.sylas.newsapp.model.Article
+import com.sylas.newsapp.data.local.model.Article
 
 interface ViewHome {
 

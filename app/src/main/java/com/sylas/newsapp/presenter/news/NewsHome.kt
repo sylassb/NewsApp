@@ -1,6 +1,6 @@
 package com.sylas.newsapp.presenter.news
 
-import com.sylas.newsapp.model.NewsResponse
+import com.sylas.newsapp.data.local.model.NewsResponse
 
 interface NewsHome {
 
