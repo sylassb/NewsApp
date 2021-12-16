@@ -13,16 +13,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NewsApp">
         <activity
-            android:name=".ui.activity.SearchActivity"
+            android:name="com.sylas.newsapp.presentation.ui.activity.SearchActivity"
             android:exported="true" />
         <activity
-            android:name=".ui.activity.FavoriteActivity"
+            android:name="com.sylas.newsapp.presentation.ui.activity.FavoriteActivity"
             android:exported="true" />
         <activity
-            android:name=".ui.activity.ArticleActivity"
+            android:name="com.sylas.newsapp.presentation.ui.activity.ArticleActivity"
             android:exported="true" />
         <activity
-            android:name=".ui.activity.MainActivity"
+            android:name="com.sylas.newsapp.presentation.ui.activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
