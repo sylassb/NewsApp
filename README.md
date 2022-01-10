@@ -1,6 +1,6 @@
 <b>Udemy Course Project "App News" (Android + Kotlin + Retrofit + Coroutines + Room + MVP + MVVM)</b>
 
-This course used as a project an App News that lists the main headlines in our country, also researching the news from around the world and saving the most interesting ones in the favorites list.
+This course used as a project a News App that lists the main headlines in our country, also researching the news from around the world and saving the most interesting ones in the favorites list.
 
 With this project I learned:
 
