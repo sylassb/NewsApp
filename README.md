@@ -4,8 +4,8 @@ This course used as a project an App News that lists the main headlines in our c
 
 With this project I learned:
 
-How to retrieve data from APIs using the Retrofit library and displaying it in my application;
-Kotlin Coroutine Basics;
-Implement MVP and MVVM architectural design pattern in my applications;
-Using the Room library to save, update and delete data in a local database;
-Get started with the Navigation component.
+* How to retrieve data from APIs using the Retrofit library and displaying it in my application;
+* Kotlin Coroutine Basics;
+* Implement MVP and MVVM architectural design pattern in my applications;
+* Using the Room library to save, update and delete data in a local database;
+* Get started with the Navigation component.
